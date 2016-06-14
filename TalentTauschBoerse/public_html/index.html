@@ -19,8 +19,12 @@
         <link href="bootstrap/assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
 
         <!-- Eigene CSS Anpassungen -->
-        <!--<link href="css/navbar-fixed-top.css" rel="stylesheet">-->
-        <!--<link href="css/blog.css" rel="stylesheet">-->
+        <link href="css/navbar-fixed-top.css" rel="stylesheet">
+        <link href="css/blog.css" rel="stylesheet">
+        <link href="css/note.css" rel="stylesheet" type="text/css"/>
+        
+        <!-- Eigene Javascript Anpassungen -->
+        <script src="script/addElements.js" type="text/javascript"></script>
 
         <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
         <!--[if lt IE 9]>
@@ -39,7 +43,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="#">LOGO</a>
+                    <a class="navbar-brand" href="start.html">LOGO</a>
                 </div>
                 <div id="navbar" class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
@@ -61,30 +65,25 @@
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
                         <li><a href="#">Archiv</a></li>
+                        <li><a href="hinzufuegen.html">Hinzufügen</a></li>
+                       
                     </ul>
                 </div><!--/.nav-collapse -->
             </div>
         </nav>
         
         <div class="container">
-            <!-- Main component for a primary marketing message or call to action -->
+            <!--Hauptbereich für die Notizen-->
             <div class="col-xs-11 col-lg-12">  
-                <div class="jumbotron">
-                    <h1>Blogspot example</h1>
-                    <p>This example is a quick exercise to illustrate how the default, static and fixed to top navbar work. It includes the responsive CSS and HTML, so it also adapts to your viewport and device.</p>
-                    <p>To see the difference between static and fixed top navbars, just scroll.</p>
-                    <p>
-                        <a class="btn btn-lg btn-primary" href="#" role="button">fjfghjgf</a>
-                    </p> 
-                </div>
+                <button id="add">hinzufügen</button>
                 <div class="row "> 
-                    <div class="col-xs-10 col-sm-9 col-md-5 col-lg-5 article">
+                    <div class="col-xs-10 col-sm-9 col-md-5 col-lg-5 note1" id="toAppend">
                         <h2>Überschrift</h2>
                         <img src="pictures/ex_circle.svg" alt="..." class="img-circle articlepic">
                         <p class="articletext">Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauriDonec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauriDonec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauricondimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
                         <p><a class="btn btn-default articlebutton" href="#" role="button">View details »</a></p>
                     </div>
-                    <div class="col-xs-10 col-sm-9 col-md-5 col-lg-5  article">                  
+<!--                    <div class="col-xs-10 col-sm-9 col-md-5 col-lg-5  article">                  
                         <h2>Überschrift</h2>
                         <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, . </p>
                         <p><a class="btn btn-default articlebutton" href="#" role="button">View details »</a></p>
@@ -98,7 +97,7 @@
                         <h2>Überschrift</h2>
                         <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus </p>
                         <p><a class="btn btn-default" href="#" role="button">View details »</a></p>
-                    </div>
+                    </div>-->
                 </div>              
             </div> 
         </div> <!-- /container -->

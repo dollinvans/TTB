@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!--> 
+<html class="no-js" lang="de"> 
+    <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!--Die überstehenden drei Metatags *müssen als erstes* im Head stehen. Jeder andere Inhalt muss *unter* dieses Tags stehen-->
+
+        <title>Talenttauschbörse Test</title>
+
+        <!--Bootstrap CSS-Kern; darf nicht gelöscht werden-->
+        <link href="bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+        <!-- IE10 viewport hack für den Surface/desktop Windows 8 Bug -->
+        <link href="bootstrap/assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+        <!-- Eigene CSS Anpassungen -->
+        <link href="css/navbar-fixed-top.css" rel="stylesheet">
+
+
+        <!--        <link href="css/formular.css" rel="stylesheet" type="text/css"/>-->
+
+        <!-- Eigene Javascript Anpassungen -->
+        <script src="script/addElements.js" type="text/javascript"></script>
+
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    </head>
+    <body>
+        <!-- Fixed navbar -->
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="start.html">LOGO</a>
+
+                </div>
+                <div id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="#">neuste Pins</a></li>
+                        <li><a href="#about">bisherige Pins</a></li>                       
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#">Archiv</a></li>
+                        <li><a href="hinzufuegen.html">Hinzufügen</a></li>
+
+                    </ul>
+                </div><!--/.nav-collapse -->
+            </div>
+        </nav>
+                
+        <form>
+            <div class="form-group">
+                <label for="postTitel">Titel</label>
+                <input type="text" class="form-control" id="postTitel" placeholder="Titel">
+            </div>
+            <div class="form-group">
+                <label for="postUntertitel">Untertitel (optional)</label>
+                <input type="text" class="form-control" id="postUntertitel" placeholder="Untertitel">
+            </div>            
+            <label for="textarea">Beschreibung</label>            
+            <textarea class="form-control" rows="10" id="textarea" placeholder="Hier kommt die beschreibung rein"></textarea>
+            <hr>
+            <button type="submit" class="btn btn-default" onclick="hinzu()">Abschicken</button>
+        </form>
+
+
+        <!--Bootstrap JavaScript-Kern
+        ==================================================-->
+        <!--Steht immer am Ende des Dokumentes, sodass die Seiten performantere Ladenzeiten haben-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>');</script>
+        <script src="bootstrap/dist/js/bootstrap.min.js"></script>
+        <!-- IE10 viewport hack für den Surface/desktop Windows 8 Bug -->
+        <script src="bootstrap/assets/js/ie10-viewport-bug-workaround.js"></script>
+    </body>
+</html>
