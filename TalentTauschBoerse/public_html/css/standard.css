@@ -1,0 +1,42 @@
+.black_border {
+border: 1px solid #000;
+}
+.white_border {
+border: 1px solid #fff;
+}
+.main_cat{
+background: url(images/thbg.png) repeat-x; color: #ffffff;
+height: 30px;
+font-size: 14px;
+font-family: tahoma;
+font-weight: bold;
+padding-top: 6px;
+padding-left: 5px;
+margin-bottom: -7px;
+}
+
+.sub_cat {
+font-family: tahoma;
+border-bottom: 1px solid #fff;
+}
+.sub_cat_a{
+float: left;
+width: 70%;
+font-size: 14px;
+padding-top: 4px;
+padding-left: 7px;
+}
+
+.description{
+font-size: 12px;
+margin-bottom: 2px;
+width: 100%;
+}
+
+.sub_cat_b{
+float: left;
+width: 27%;
+font-size: 12px;
+padding-top: 7px;
+padding-left: 7px;
+}
